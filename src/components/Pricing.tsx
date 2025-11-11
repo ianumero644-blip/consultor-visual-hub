@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 
 const Pricing = () => {
   const handleContact = () => {
-    window.open('https://wa.me/5511999999999', '_blank');
+    window.open('https://wa.me/55996225112', '_blank');
   };
 
   return (
