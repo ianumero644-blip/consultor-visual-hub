@@ -10,22 +10,22 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/30 to-muted"></div>
       
-      <div className="container relative z-10 px-6 py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-display font-semibold leading-tight tracking-tight">
+      <div className="container relative z-10 px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-semibold leading-tight tracking-tight px-2">
             Transforme sua Presença Digital com{" "}
             <span className="text-gradient">Conteúdos de Alto Impacto</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed px-4">
             Carrosséis sofisticados e vídeos profissionais para consultores de imagem.
           </p>
           
-          <div className="pt-6">
+          <div className="pt-4 sm:pt-6">
             <Button 
               size="lg" 
               onClick={scrollToContact}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant transition-smooth text-lg px-8 py-6 rounded-full group"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant transition-smooth text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-full group w-full sm:w-auto"
             >
               Solicitar Orçamento
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

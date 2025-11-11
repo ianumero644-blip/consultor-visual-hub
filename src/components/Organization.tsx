@@ -22,18 +22,18 @@ const responsibilities = [
 
 const Organization = () => {
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
       <div className="container max-w-4xl mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-display font-semibold">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold px-2">
             Organização & Responsabilidades
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground px-4">
             Como garantir entregas ágeis e eficientes
           </p>
         </div>
         
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {responsibilities.map((item, index) => {
             const Icon = item.type === "requirement" ? AlertCircle : CheckCircle2;
             const iconColor = item.type === "requirement" ? "text-accent" : "text-accent/70";
@@ -41,10 +41,10 @@ const Organization = () => {
             return (
               <Card 
                 key={index}
-                className="p-6 flex items-start gap-4 shadow-soft bg-card border-border/50 hover:border-accent/30 transition-smooth"
+                className="p-5 sm:p-6 flex items-start gap-3 sm:gap-4 shadow-soft bg-card border-border/50 hover:border-accent/30 transition-smooth"
               >
-                <Icon className={`w-5 h-5 ${iconColor} flex-shrink-0 mt-0.5`} />
-                <p className="text-foreground/90 leading-relaxed">
+                <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${iconColor} flex-shrink-0 mt-0.5`} />
+                <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                   {item.text}
                 </p>
               </Card>

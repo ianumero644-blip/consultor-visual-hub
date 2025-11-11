@@ -18,53 +18,53 @@ const videoDetails = [
 
 const DeliveryDetails = () => {
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-display font-semibold">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-semibold px-2">
             Detalhes das Entregas
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground px-4">
             Qualidade e agilidade em cada entrega
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="p-8 space-y-6 shadow-soft bg-card border-border/50">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+          <Card className="p-6 sm:p-8 space-y-5 sm:space-y-6 shadow-soft bg-card border-border/50">
             <div>
-              <h3 className="text-2xl font-display font-semibold mb-2">
+              <h3 className="text-xl sm:text-2xl font-display font-semibold mb-1.5 sm:mb-2">
                 Carrosséis
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Design impecável para suas postagens
               </p>
             </div>
             
-            <ul className="space-y-4">
+            <ul className="space-y-3 sm:space-y-4">
               {carouselDetails.map((detail, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground/90">{detail}</span>
+                <li key={index} className="flex items-start gap-2.5 sm:gap-3">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-foreground/90">{detail}</span>
                 </li>
               ))}
             </ul>
           </Card>
           
-          <Card className="p-8 space-y-6 shadow-soft bg-card border-border/50">
+          <Card className="p-6 sm:p-8 space-y-5 sm:space-y-6 shadow-soft bg-card border-border/50">
             <div>
-              <h3 className="text-2xl font-display font-semibold mb-2">
+              <h3 className="text-xl sm:text-2xl font-display font-semibold mb-1.5 sm:mb-2">
                 Vídeos
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Edição profissional que engaja
               </p>
             </div>
             
-            <ul className="space-y-4">
+            <ul className="space-y-3 sm:space-y-4">
               {videoDetails.map((detail, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground/90">{detail}</span>
+                <li key={index} className="flex items-start gap-2.5 sm:gap-3">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-foreground/90">{detail}</span>
                 </li>
               ))}
             </ul>
